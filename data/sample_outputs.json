@@ -1,0 +1,29 @@
+[
+    {
+      "prompt_id": 3,
+      "prompt": "Sell a pen that ‘writes better answers during vivas.’",
+      "tone": "sarcastic",
+      "human": "This pen doesn’t just write — it gaslights professors into thinking you’re brilliant.",
+      "ai": "Introducing the VivaMaster 3000 — a pen so confident, even your nonsense sounds Nobel-worthy.",
+      "winner": "ai",
+      "score": {
+        "human": 7,
+        "ai": 9
+      },
+      "feedback": "AI's punchline was sharper and nailed the sarcastic tone better."
+    },
+    {
+      "prompt_id": 8,
+      "prompt": "Create a dating app that only matches people who’ve failed the same exam.",
+      "tone": "brandy",
+      "human": "We bond over breakdowns. Introducing FailFlame — your F in love.",
+      "ai": "Welcome to 'ReboundU' — where failed attempts become full marks in romance. Because misery loves algorithm.",
+      "winner": "human",
+      "score": {
+        "human": 9,
+        "ai": 6
+      },
+      "feedback": "Human's response had better branding and was more clever with the concept."
+    }
+  ]
+  
