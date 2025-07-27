@@ -23,7 +23,10 @@
     "id": 6,
     "prompt": "Sell a pen that 'writes better answers during vivas.'"
   },
-  { "id": 7, "prompt": "Market attendance as the next crypto investment." },
+  { 
+    "id": 7, 
+    "prompt": "Market attendance as the next crypto investment."
+  },
   {
     "id": 8,
     "prompt": "Create a dating app that only matches people who've failed the same exam."
@@ -32,8 +35,7 @@
     "id": 9,
     "prompt": "Pitch a gym membership where people only go to click mirror selfies."
   },
-  { "id": 10, 
-    "prompt": "Rebrand power cuts as 'digital detox therapy'." },
+  { "id": 10, "prompt": "Rebrand power cuts as 'digital detox therapy'." },
   {
     "id": 11,
     "prompt": "Convince Gen Z to use landline phones 'for aesthetic productivity'."
