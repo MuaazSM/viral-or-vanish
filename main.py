@@ -3,6 +3,7 @@ import random
 import json
 from datetime import datetime
 from chains.llm_handler import get_writer_response, get_evaluation_result
+from utils.prompt_selector import get_random_prompt
 
 # Config
 st.set_page_config(page_title="Viral or Vanish", page_icon="🔥", layout="centered")
@@ -27,9 +28,10 @@ if st.session_state.player_name == "":
 
 # Game State
 if "prompt" not in st.session_state:
-    with open("data/prompts.json") as f:
-        prompts = json.load(f)
-        st.session_state.prompt = random.choice(prompts)
+    # with open("data/prompts.json") as f:
+    #     prompts = json.load(f)
+    #     st.session_state.prompt = random.choice(prompts)
+    st.session_state.prompt = get_random_prompt()
 
 if "user_input" not in st.session_state:
     st.session_state.user_input = ""
