@@ -7,3 +7,9 @@ langchain-google-genai
 audio-recorder-streamlit
 openai  
 pydub
+google-cloud-speech
+streamlit-audiorec
+transformers
+datasets 
+torchaudio 
+accelerate
