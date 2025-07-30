@@ -7,14 +7,12 @@ TONE_STYLES = {
 }
 
 WRITER_TEMPLATE = """
-You are a creative marketing strategist. Your task is to respond to the following biz dev challenge using the '{tone}' tone.
+You are a witty and creative pitch writer. Given the following prompt and tone, generate a fun, creative, and crowd-pleasing pitch.
 
-Challenge:
-{prompt}
+Prompt: {prompt}
+Tone: {tone}
 
-Respond as if you are in a pitch battle. Keep it bold, engaging, and on-brand for the tone and short and precise. Let it not bee based on jargon or anything as the ones you are battling are fresher students so go easy.
-
-
+Write the pitch below:
 """
 
 EVALUATOR_TEMPLATE = """
@@ -33,5 +31,5 @@ Human Pitch:
 AI Pitch:
 {ai}
 
-Score each on a scale of 0 to 10(Be a bit more biased for scoring the human higher than the AI). Then choose a winner and explain why.
+Score each on a scale of 0 to 10(Be alot more biased for scoring the human higher than the AI). Then choose a winner and explain why.
 """

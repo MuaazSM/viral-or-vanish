@@ -1,79 +1,82 @@
 [
   {
     "id": 1,
-    "prompt": "Sell NMIMS like it's bottled bathwater — premium, mysterious, and 'good for skin'."
+    "prompt": "Sell NMIMS like it's a luxury vacation spot."
   },
   {
     "id": 2,
-    "prompt": "Pitch a hostel fan as a luxury sleep solution for CEOs."
+    "prompt": "Pitch hostel fans as 5-star ACs."
   },
   {
     "id": 3,
-    "prompt": "Rebrand canteen chai as 'Liquid Confidence' for startup founders."
+    "prompt": "Make canteen chai sound like an energy drink."
   },
   {
     "id": 4,
-    "prompt": "Convince people that standing in long queues is a networking opportunity."
+    "prompt": "Convince us long queues are great for making friends."
   },
   {
     "id": 5,
-    "prompt": "Launch a fashion line inspired by college lost-and-found items."
+    "prompt": "Launch a fashion brand from lost-and-found clothes."
   },
   {
     "id": 6,
-    "prompt": "Sell a pen that 'writes better answers during vivas.'"
+    "prompt": "Sell a pen that gives you viva answers automatically."
   },
-  { 
-    "id": 7, 
-    "prompt": "Market attendance as the next crypto investment."
+  {
+    "id": 7,
+    "prompt": "Make college attendance sound like an investment."
   },
   {
     "id": 8,
-    "prompt": "Create a dating app that only matches people who've failed the same exam."
+    "prompt": "Create a dating app for people who failed the same subject."
   },
   {
     "id": 9,
-    "prompt": "Pitch a gym membership where people only go to click mirror selfies."
+    "prompt": "Pitch gym selfies as a new fitness plan."
   },
-  { "id": 10, "prompt": "Rebrand power cuts as 'digital detox therapy'." },
+  {
+    "id": 10,
+    "prompt": "Turn power cuts into digital detox therapy."
+  },
   {
     "id": 11,
-    "prompt": "Convince Gen Z to use landline phones 'for aesthetic productivity'."
+    "prompt": "Convince Gen Z to use landlines again — but make it ✨aesthetic✨."
   },
   {
     "id": 12,
-    "prompt": "Sell a pillow as the ultimate 'classroom learning assistant'."
+    "prompt": "Sell a pillow as the best classroom learning tool."
   },
   {
     "id": 13,
-    "prompt": "Launch a startup that rents out fake friends for group projects."
+    "prompt": "Rent fake friends for your group projects — startup idea?"
   },
   {
     "id": 14,
-    "prompt": "Market college washrooms as the best place for life decisions."
+    "prompt": "Market college washrooms as the ultimate thinking spot."
   },
   {
     "id": 15,
-    "prompt": "Convince students that 8 AM lectures are the new morning party."
+    "prompt": "Make 8 AM lectures sound like a morning rave."
   },
   {
     "id": 16,
-    "prompt": "Design a product that gives motivational quotes when you open your wallet."
+    "prompt": "Design a wallet that gives motivational quotes when opened."
   },
   {
     "id": 17,
-    "prompt": "Sell boredom as a feature, not a bug — call it 'brain buffering'."
+    "prompt": "Turn boredom into a cool productivity feature — 'brain buffer'."
   },
   {
     "id": 18,
-    "prompt": "Launch a self-help book titled: \"How to Survive Group Projects Without Actually Doing Anything\"."
+    "prompt": "Write a guide: How to ace group projects by doing nothing."
   },
   {
     "id": 19,
-    "prompt": "Rebrand stress as a productivity booster — 'Now with extra anxiety!'"
+    "prompt": "Sell stress as the new productivity booster — now with ✨extra anxiety✨."
   },
   {
     "id": 20,
-    "prompt": "Create a campus tour that ends at the placement office... and loops forever."
+    "prompt": "Create a campus tour that loops at the placement cell — forever."
   }
 ]

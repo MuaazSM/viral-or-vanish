@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from chains.prompt_templates import WRITER_TEMPLATE, EVALUATOR_TEMPLATE
-from chains.transcriber import transcribe_audio_to_text  # Now uses Whisper
+from chains.transcriber import transcribe_audio_to_text
 import json
 
 load_dotenv()
@@ -16,51 +16,30 @@ llm = ChatGoogleGenerativeAI(
     max_tokens=512,
 )
 
-# Speech transcription function
-def transcribe_audio_to_text(audio_file_path: str) -> str:
-    """Transcribe audio file to text using Google Cloud Speech-to-Text.
-    """
-    try:
-        transcript = transcribe_audio_to_text(audio_file_path)
-        return transcript
-    except Exception as e:
-        print(f"Error transcribing audio: {e}")
-        return ""
-
-# Writer Chain
-def get_writer_response(prompt_text: str, tone: str, audio_file: str = None) -> dict:
-    """Get AI writer response with optional audio input.
-    """
-    # If audio file is provided, transcribe it and use as additional context
-    audio_context = ""
-    if audio_file:
-        audio_context = transcribe_audio_to_text(audio_file)
-        if audio_context:
-            # Add audio context to the prompt
-            prompt_text = f"{prompt_text}\n\nAudio context: {audio_context}"
-    
+# writer chain
+def get_writer_response(prompt_text: str) -> dict:
     prompt = PromptTemplate(
-        input_variables=["prompt", "tone"],
+        input_variables=["prompt"],
         template=WRITER_TEMPLATE
     )
     chain = prompt | llm
-    response = chain.invoke({"prompt": prompt_text, "tone": tone})
-    
+    response = chain.invoke({"prompt": prompt_text})
+
     return {
-        "ai_pitch": response.content.strip(),
-        "tone": tone,
-        "audio_transcript": audio_context if audio_file else None
+        "ai_pitch": response.content.strip()
     }
+
 
 # Evaluator Chain
 def get_evaluation_result(prompt_text: str, human: str, ai: str, tone: str, human_audio: str = None) -> dict:
-    """Evaluate human vs AI responses with optional audio input.
     """
-    # If human provided audio, transcribe it and use instead of/alongside text
+    Evaluate human vs AI responses with audio input
+    """
+    # if human provided audio, transcribe it and use instead of/alongside text
     if human_audio:
         audio_transcript = transcribe_audio_to_text(human_audio)
         if audio_transcript:
-            human = audio_transcript  # Use transcribed audio as human response
+            human = audio_transcript  # use transcribed audio as human response
     
     prompt = PromptTemplate(
         input_variables=["prompt", "human", "ai", "tone"],
